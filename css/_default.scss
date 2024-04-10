@@ -1,0 +1,282 @@
+/* reset styles */
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+/* --------- end reset styles -------------- */
+
+/* default  */
+
+body {
+	
+	&.lock {
+		overflow: hidden;
+	}
+	scroll-behavior: smooth;
+
+	[class*="__container"] {
+		position: relative;
+		max-width: 1440px;
+		padding: 0 60px;
+	}
+
+	.wrapper {
+		margin: 0 auto;
+		position: relative;
+		width: 100%;
+		min-height: 100%;
+		max-width: 1440px;
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+
+		background: linear-gradient(180.00deg, rgb(150, 108, 255) -16.533%,rgba(246, 189, 255, 0) 100%);
+	}
+}
+
+// ---------- FONT
+@font-face {
+	font-family: "Furore";
+	src: url(../fonts/furore/furore-regular.ttf);
+	src: url(../fonts/furore/furore-regular.woff);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Gilroy Bold";
+	src: url(../fonts/gilroy/gilroy-bold.ttf);
+	src: url(../fonts/gilroy/gilroy-bold.woff);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Gilroy Extrabold";
+	src: url(../fonts/gilroy/gilroy-extrabold.ttf);
+	src: url(../fonts/gilroy/gilroy-extrabold.woff);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Gilroy Medium";
+	src: url(../fonts/gilroy/gilroy-medium.ttf);
+	src: url(../fonts/gilroy/gilroy-medium.woff);
+	font-weight: medium;
+}
+
+@font-face {
+	font-family: "Gilroy Semibold";
+	src: url(../fonts/gilroy/gilroy-semibold.ttf);
+	src: url(../fonts/gilroy/gilroy-semibold.woff);
+	font-weight: normal;
+}
+
+$maxWidth: 1440;
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 375;
+	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 375px) / #{$maxWidth}));
+}
+
+// ----- FONT COLOR -----
+$textBlack:rgb(22, 22, 22);
+$textWhite:rgb(255, 255, 255);
+$textPurple:rgb(128, 77, 255);
+/* ----------------------- */
+
+a {
+	color: $textBlack;
+	font-family: "Furore";
+	font-size: 18px;
+	line-height: 31px;
+}
+
+h1 {
+	color: $textBlack;
+	font-family: "Furore";
+	line-height: 100px;
+	@include adaptiv-font(90, 42);
+}
+
+h2 {
+	color: $textBlack;
+	font-family: "Furore";
+	line-height: 113px;
+	text-transform: uppercase;
+	@include adaptiv-font(98, 40);
+}
+
+h4 {
+	color: $textBlack;
+	font-family: "Furore";
+	line-height: 67px;
+	text-transform: uppercase;
+	@include adaptiv-font(58, 30);
+}
+
+p {
+	color: $textBlack;
+	font-family: "Furore";
+	line-height: 27px;
+	@include adaptiv-font(20, 18);
+}
+
+// \----- FONTS STYLES -----/
+
+%furore-r20 {
+	color: $textBlack;
+	font-family: "Furore";
+	line-height: 27px;
+	@include adaptiv-font(20, 18);
+}
+
+%furore-r32 {
+	color: $textBlack;
+	font-family: "Furore";
+	line-height: 37px;
+	@include adaptiv-font(32, 28);
+}
+
+%gilroy-b20 {
+	color: $textBlack;
+	font-family: "Gilroy Bold";
+	line-height: 27px;
+	text-transform: uppercase;
+	@include adaptiv-font(20, 18);
+}
+
+%gilroy-b16 {
+	color: $textPurple;
+	font-family: "Gilroy Bold";
+	line-height: 27px;
+	text-transform: uppercase;
+	@include adaptiv-font(16, 14);
+}
+
+%gilroy-m20 {
+	color: $textBlack;
+	font-family: "Gilroy Medium";
+	font-size: 20px;
+	line-height: 25px;
+	@include adaptiv-font(20, 18);
+}
+// -----------------------------------
+
+
+
+
+%blackBtn{
+	@extend %furore-r20;
+	color: rgb(255, 255, 255);
+	border-radius: 8px;
+	background: rgb(0, 0, 0);
+	height: 67px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	text-align: center;
+    width: 100%;
+    max-width: 421px;
+    cursor: pointer;
+}
+
+%whiteBtn{
+	border-radius: 6px;
+	background: rgb(255, 255, 255);
+	height: 48px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	text-align: center;
+    width: 100%;
+    max-width: 200px;
+    cursor: pointer;
+}
+
+// @extend %blackBtn
