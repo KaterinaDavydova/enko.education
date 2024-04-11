@@ -57,9 +57,19 @@ $(function () {
         variableWidth: true,
         speed: 400,
         infinite: true,
-        arrows: false,
+        arrows: true,
         slidesToShow: 4,
         slidesToScroll: 1,
+
+        responsive: [
+            {
+                breakpoint: 769, 
+                settings: {
+                    slidesToShow: 2, 
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     });
 });
 

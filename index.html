@@ -12,55 +12,58 @@
 
 <body>
     <div class="wrapper">
-        <!-- HEADER -->
-        <header class="header">
-            <div class="header__container">
-                <img class="header__logo" src="images/header-logo.svg" alt="logo">
-                <div class="header__burgerIcon">
-                    <span class="menuText">МЕНЮ</span>
-                    <div class="menuIcon">
-                        <img src="images/close.svg" alt="close">
+        <div class="gradient-bg">
+            <!-- HEADER -->
+            <header class="header">
+                <div class="header__container">
+                    <img class="header__logo" src="images/header-logo.svg" alt="logo">
+                    <div class="header__burgerIcon">
+                        <span class="menuText">МЕНЮ</span>
+                        <div class="menuIcon">
+                            <img src="images/close.svg" alt="close">
+                        </div>
+                    </div>
+                    <div class="header__menu header__menu-mobile">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">Курси</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">Що отримаєш</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">Faq</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">Контакти</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="header__btn">Увійти</a>
+                </div>
+            </header>
+            <!-- MAIN SECTION -->
+            <section class="main">
+                <div class="main__container">
+                    <img src="images/lighting.png" alt="lighting">
+                    <h1 class="main__title">
+                        Від ноунейма <br>
+                        до артиста
+                    </h1>
+                    <span class="main__slogan">
+                        Обʼєднуємо українських митців, щоб надихати людей змінювати світ на краще
+                    </span>
+                    <a class="main__btn" href="#">Стати учасником спільноти</a>
+                    <div class="main__list">
+                        <p class="main__list-item">Музичні <br>курси</p>
+                        <p class="main__list-item">Досвід зірок <br>та продюсерів</p>
+                        <p class="main__list-item">Ком’юніті <br>музикантів</p>
+                        <p class="main__list-item">Закритий <br>клуб</p>
                     </div>
                 </div>
-                <div class="header__menu header__menu-mobile">
-                    <ul class="header__menu-list">
-                        <li class="header__menu-item">
-                            <a class="header__menu-link" href="#">Курси</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a class="header__menu-link" href="#">Що отримаєш</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a class="header__menu-link" href="#">Faq</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a class="header__menu-link" href="#">Контакти</a>
-                        </li>
-                    </ul>
-                </div>
-                <a href="#" class="header__btn">Увійти</a>
-            </div>
-        </header>
-        <!-- MAIN SECTION -->
-        <section class="main">
-            <div class="main__container">
-                <img src="images/lighting.png" alt="lighting">
-                <h1 class="main__title">
-                    Від ноунейма <br>
-                    до артиста
-                </h1>
-                <span class="main__slogan">
-                    Обʼєднуємо українських митців, щоб надихати людей змінювати світ на краще
-                </span>
-                <a class="main__btn" href="#">Стати учасником спільноти</a>
-                <div class="main__list">
-                    <p class="main__list-item">Музичні <br>курси</p>
-                    <p class="main__list-item">Досвід зірок <br>та продюсерів</p>
-                    <p class="main__list-item">Ком’юніті <br>музикантів</p>
-                    <p class="main__list-item">Закритий <br>клуб</p>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
+
         <!-- COMMUNITY SECTION -->
         <section class="community">
             <div class="community__container">
@@ -124,6 +127,10 @@
                     <div class="courses__slide-item">
                         <div class="courses__slide-img">
                             <img src="images/vanya.png" alt="Vanya">
+                            <div class="courses__slide-die">
+                                <span class="courses__num">8</span>
+                                <span class="courses__text">УРОКІВ</span>
+                            </div>
                         </div>
                         <span class="courses__slide-name">досвід Ванька Клименка </span>
                         <p class="courses__slide-subtitle">Просування <br> релізу</p>
@@ -131,45 +138,86 @@
                     </div>
                     <div class="courses__slide-item">
                         <div class="courses__slide-img">
-                            <img src="images/vanya.png" alt="Vanya">
+                            <img src="images/lock.png" alt="lock">
+                            <!-- <div class="courses__slide-die">
+                                <span class="courses__num">8</span>
+                                <span class="courses__text">УРОКІВ</span>
+                            </div> -->
                         </div>
-                        <span class="courses__slide-name">досвід Ванька Клименка </span>
-                        <p class="courses__slide-subtitle">Просування релізу</p>
-                        <a class="courses__slide__btn" href="#">Більше про курс</a>
+                        <span class="courses__slide-name">Скоро анонс курсу </span>
+                        <!-- <p class="courses__slide-subtitle">Просування релізу</p>
+                        <a class="courses__slide__btn" href="#">Більше про курс</a> -->
                     </div>
                     <div class="courses__slide-item">
                         <div class="courses__slide-img">
-                            <img src="images/vanya.png" alt="Vanya">
+                            <img src="images/lock.png" alt="lock">
+                            <!-- <div class="courses__slide-die">
+                                <span class="courses__num">8</span>
+                                <span class="courses__text">УРОКІВ</span>
+                            </div> -->
                         </div>
-                        <span class="courses__slide-name">досвід Ванька Клименка </span>
-                        <p class="courses__slide-subtitle">Просування релізу</p>
-                        <a class="courses__slide__btn" href="#">Більше про курс</a>
+                        <span class="courses__slide-name">Скоро анонс курсу </span>
+                        <!-- <p class="courses__slide-subtitle">Просування релізу</p>
+                        <a class="courses__slide__btn" href="#">Більше про курс</a> -->
                     </div>
                     <div class="courses__slide-item">
                         <div class="courses__slide-img">
-                            <img src="images/vanya.png" alt="Vanya">
+                            <img src="images/lock.png" alt="lock">
+                            <!-- <div class="courses__slide-die">
+                                <span class="courses__num">8</span>
+                                <span class="courses__text">УРОКІВ</span>
+                            </div> -->
                         </div>
-                        <span class="courses__slide-name">досвід Ванька Клименка </span>
-                        <p class="courses__slide-subtitle">Просування релізу</p>
-                        <a class="courses__slide__btn" href="#">Більше про курс</a>
+                        <span class="courses__slide-name">Скоро анонс курсу </span>
+                        <!-- <p class="courses__slide-subtitle">Просування релізу</p>
+                        <a class="courses__slide__btn" href="#">Більше про курс</a> -->
                     </div>
                     <div class="courses__slide-item">
                         <div class="courses__slide-img">
-                            <img src="images/vanya.png" alt="Vanya">
+                            <img src="images/lock.png" alt="lock">
+                            <!-- <div class="courses__slide-die">
+                                <span class="courses__num">8</span>
+                                <span class="courses__text">УРОКІВ</span>
+                            </div> -->
                         </div>
-                        <span class="courses__slide-name">досвід Ванька Клименка </span>
-                        <p class="courses__slide-subtitle">Просування релізу</p>
-                        <a class="courses__slide__btn" href="#">Більше про курс</a>
-                    </div> 
+                        <span class="courses__slide-name">Скоро анонс курсу </span>
+                        <!-- <p class="courses__slide-subtitle">Просування релізу</p>
+                        <a class="courses__slide__btn" href="#">Більше про курс</a> -->
+                    </div>
                 </div>
 
-                <div class="courses__slide__progress" role="progressbar" aria-valuemin="0" aria-valuemax="100"> 
-                    <span class="slider__label sr-only"> 
+                <div class="courses__slide__progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                    <span class="slider__label sr-only">
                 </div>
             </div>
         </section>
+        <!-- ABOUTCOURSE -->
+        <section class="aboutCourse">
+            <div class="aboutCourse__container">
+                <img class="aboutCourse__bgImg" src="images/lighting-about.png" alt="lighting">
+                <div class="aboutCourse__content">
+                    <span class="aboutCourse__caption">Про курс</span>
+                    <h4 class="aboutCourse__title">Просування <br> релізу</h4>
+                    <p class="aboutCourse__text">
+                        Курс веде Ваньок Кліменко — співзасновник лейбла ENKO, музичний продюсер 
+                        Kalush Orchestra, alyona alyona, SKOFKA, автор понад 300 пісень, саундпродюсер KOLA, 
+                        Jerry Heil, MamaRika, який спродюсував всі пісні DOROFEEVA українською мовою, один з 
+                        головних трендсеттерів української музики
+                    </p>
+                </div>
+                <div class="aboutCourse__img">
+                    <img src="images/about.png" alt="people">
+                </div>
+            </div>
+        </section>
+        <section class="program">
+            <div class="program__container">
 
-        <footer>           
+            </div> 
+
+        </section>
+
+        <footer>
         </footer>
     </div>
 

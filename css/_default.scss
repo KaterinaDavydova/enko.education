@@ -115,8 +115,6 @@ body {
 		display: flex;
 		flex-direction: column;
 		overflow: hidden;
-
-		background: linear-gradient(180.00deg, rgb(150, 108, 255) -16.533%,rgba(246, 189, 255, 0) 100%);
 	}
 }
 
@@ -279,4 +277,39 @@ p {
     cursor: pointer;
 }
 
-// @extend %blackBtn
+/* Arrows */
+.slick-prev,
+.slick-next {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  cursor: pointer;
+  line-height: 0;
+  display: block;
+  padding: 0;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  z-index: 10;
+  border-radius: 50px;
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+}
+.slick-prev {
+  background-image: url("../images/arrow-left.svg");
+}
+
+.slick-next {
+  background-image: url("../images/arrow-right.svg");
+}
+// -----------------------------------------------------
