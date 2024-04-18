@@ -37,39 +37,72 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 
+// --------SPLIDE SLIDER-----------
 
-$(function () {
-    const $slider = $('.courses__slider');
-    const $progressBar = $('.courses__slide__progress');
-    const $progressBarLabel = $('.slider__label');
+const splide = new Splide( '#coursesSlider', {
+    type   : 'loop',
+    perPage: 4,
+    pagination: false,
+    perMove: 1,
+    gap: '30px',
+    fixedWidth: "340px",
+    
 
-    $slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-        var calc = ((nextSlide) / (slick.slideCount - 1)) * 100;
+    // breakpoints: {
+    //     768: {
+    //         perPage: 2
+    //     }
+    // }
+} );
 
-        $progressBar
-            .css('background-size', calc + '% 100%')
-            .attr('aria-valuenow', calc);
+const bar = splide.root.querySelector( '.my-carousel-progress-bar' );
 
-        $progressBarLabel.text(calc + '% completed');
-    });
+// Updates the bar width whenever the carousel moves:
+splide.on( 'mounted move', function () {
+  const end  = splide.Components.Controller.getEnd() + 1;
+  const rate = Math.min( ( splide.index + 1 ) / end, 1 );
+  bar.style.width = String( 100 * rate ) + '%';
+} );
 
-    $slider.slick({
-        variableWidth: true,
-        speed: 400,
-        infinite: true,
-        arrows: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
+splide.mount();
 
-        responsive: [
-            {
-                breakpoint: 769, 
-                settings: {
-                    slidesToShow: 2, 
-                    slidesToScroll: 1,
-                }
-            }
-        ]
-    });
-});
 
+
+
+const splide2 = new Splide( '#clientsSlider', {
+    type   : 'loop',
+    perPage: 4,
+    pagination: false,
+    perMove: 1,
+    gap: '30px',
+    fixedWidth: "340px",
+    
+
+    // breakpoints: {
+    //     768: {
+    //         perPage: 2
+    //     }
+    // }
+} );
+
+const Progresbar = splide2.root.querySelector( '.my-carousel-progress-bar' );
+
+// Updates the bar width whenever the carousel moves:
+splide2.on( 'mounted move', function () {
+  const end  = splide2.Components.Controller.getEnd() + 1;
+  const rate = Math.min( ( splide2.index + 1 ) / end, 1 );
+  Progresbar.style.width = String( 100 * rate ) + '%';
+} );
+
+splide2.mount();
+// ---------------END SPLIDE SLIDER----------
+
+
+const accordions = document.querySelectorAll('.accordion')
+
+accordions.forEach((accordion) => {
+  accordion.addEventListener('click', () => {
+    const body = accordion.querySelector('.accordion-body')
+    body.classList.toggle('active')
+  })
+})

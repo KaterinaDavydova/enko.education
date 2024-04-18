@@ -149,7 +149,7 @@ a {
   line-height: 31px;
 }
 
-h1 {
+h1, h3 {
   color: rgb(22, 22, 22);
   font-family: "Furore";
   line-height: 100px;
@@ -179,21 +179,21 @@ p {
   font-size: calc(18px + 2 * (100vw - 375px) / 1065);
 }
 
-.courses .courses__container .courses__slider .courses__slide-item .courses__slide-img .courses__slide-die .courses__text, .courses .courses__container .courses__slider .courses__slide-item .courses__slide-img .courses__slide-die .courses__num, .community .community__container .community__list ol .community__list-item::before, .community .community__container .community__list ol .community__list-item, .main .main__container .main__btn {
+.qa .accordion-header li span, .steps .steps__flex-container .steps__item span, .program .program__list .program__list-item span, .courses .splide .splide__slide .courses__slide-img .courses__slide-die .courses__text, .courses .splide .splide__slide .courses__slide-img .courses__slide-die .courses__num, .community .community__container .community__list ol .community__list-item::before, .community .community__container .community__list ol .community__list-item, .steps .steps__container .steps__btn, .main .main__container .main__btn {
   color: rgb(22, 22, 22);
   font-family: "Furore";
   line-height: 27px;
   font-size: calc(18px + 2 * (100vw - 375px) / 1065);
 }
 
-.courses .courses__container .courses__slider .courses__slide-item .courses__slide-subtitle {
+.tarif .tarif__elems .tarif__card .tarif__heading, .secondSlider .secondSlider__slider .splide__list .secondSlider__slide-item .secondSlider__text .secondSlider__subtitle, .courses .splide .splide__slide .courses__slide-subtitle {
   color: rgb(22, 22, 22);
   font-family: "Furore";
   line-height: 37px;
   font-size: calc(28px + 4 * (100vw - 375px) / 1065);
 }
 
-.courses .courses__container .courses__slogan, .community .community__container .community__presents .community__presents-desk .community__text {
+.tarif .tarif__elems .tarif__card-container .tarif__price .tarif__price-info, .tarif .tarif__elems .tarif__card-container .tarif__price, .courses .courses__container .courses__slogan, .community .community__container .community__presents .community__presents-desk .community__text {
   color: rgb(22, 22, 22);
   font-family: "Gilroy Bold";
   line-height: 27px;
@@ -201,7 +201,15 @@ p {
   font-size: calc(18px + 2 * (100vw - 375px) / 1065);
 }
 
-.aboutCourse .aboutCourse__container .aboutCourse__content .aboutCourse__caption, .courses .courses__container .courses__slider .courses__slide-item .courses__slide-name {
+.qa .accordion-header li p, .program .program__list .program__list-item p {
+  color: rgb(22, 22, 22);
+  font-family: "Gilroy Bold";
+  line-height: 57px;
+  text-transform: uppercase;
+  font-size: calc(20px + 4 * (100vw - 375px) / 1065);
+}
+
+.aboutCourse .aboutCourse__container .aboutCourse__content .aboutCourse__caption, .courses .splide .splide__slide .courses__slide-name {
   color: rgb(128, 77, 255);
   font-family: "Gilroy Bold";
   line-height: 27px;
@@ -209,7 +217,7 @@ p {
   font-size: calc(14px + 2 * (100vw - 375px) / 1065);
 }
 
-.aboutCourse .aboutCourse__container .aboutCourse__content .aboutCourse__text, .community .community__container .community__list ol .community__list-item span, .main .main__container .main__slogan {
+.footer .footer__container .footer__label span, .qa .accordion-body.active p, .secondSlider .secondSlider__slider .splide__list .secondSlider__slide-item .secondSlider__text .secondSlider__desc, .aboutCourse .aboutCourse__container .aboutCourse__content .aboutCourse__text, .community .community__container .community__list ol .community__list-item span, .main .main__container .main__slogan {
   color: rgb(22, 22, 22);
   font-family: "Gilroy Medium";
   font-size: 20px;
@@ -217,7 +225,14 @@ p {
   font-size: calc(18px + 2 * (100vw - 375px) / 1065);
 }
 
-.main .main__container .main__btn {
+.tarif .tarif__elems .tarif__card .tarif__list li {
+  color: rgb(22, 22, 22);
+  font-family: "Gilroy Semibold";
+  line-height: 25px;
+  font-size: calc(18px + 2 * (100vw - 375px) / 1065);
+}
+
+.steps .steps__container .steps__btn, .main .main__container .main__btn {
   color: rgb(255, 255, 255);
   border-radius: 8px;
   background: rgb(0, 0, 0);
@@ -231,7 +246,7 @@ p {
   cursor: pointer;
 }
 
-.courses .courses__container .courses__slider .courses__slide-item .courses__slide__btn {
+.tarif .tarif__container .tarif__btn, .courses .splide .splide__slide .courses__slide__btn {
   border-radius: 6px;
   background: rgb(255, 255, 255);
   height: 48px;
@@ -245,8 +260,7 @@ p {
 }
 
 /* Arrows */
-.slick-prev,
-.slick-next {
+.splide__arrow {
   width: 50px;
   height: 50px;
   background-size: cover;
@@ -263,22 +277,11 @@ p {
   z-index: 10;
   border-radius: 50px;
 }
-.slick-prev:active,
-.slick-next:active {
+.splide__arrow:active {
   opacity: 0.7;
 }
-.slick-prev:hover,
-.slick-next:hover {
-  transform: translateY(-3px);
+.splide__arrow:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.slick-prev {
-  background-image: url("../images/arrow-left.svg");
-}
-
-.slick-next {
-  background-image: url("../images/arrow-right.svg");
 }
 
 /* reset styles */
@@ -432,7 +435,7 @@ a {
   line-height: 31px;
 }
 
-h1 {
+h1, h3 {
   color: rgb(22, 22, 22);
   font-family: "Furore";
   line-height: 100px;
@@ -462,21 +465,21 @@ p {
   font-size: calc(18px + 2 * (100vw - 375px) / 1065);
 }
 
-.courses .courses__container .courses__slider .courses__slide-item .courses__slide-img .courses__slide-die .courses__text, .courses .courses__container .courses__slider .courses__slide-item .courses__slide-img .courses__slide-die .courses__num, .community .community__container .community__list ol .community__list-item::before, .community .community__container .community__list ol .community__list-item, .main .main__container .main__btn {
+.qa .accordion-header li span, .steps .steps__flex-container .steps__item span, .program .program__list .program__list-item span, .courses .splide .splide__slide .courses__slide-img .courses__slide-die .courses__text, .courses .splide .splide__slide .courses__slide-img .courses__slide-die .courses__num, .community .community__container .community__list ol .community__list-item::before, .community .community__container .community__list ol .community__list-item, .steps .steps__container .steps__btn, .main .main__container .main__btn {
   color: rgb(22, 22, 22);
   font-family: "Furore";
   line-height: 27px;
   font-size: calc(18px + 2 * (100vw - 375px) / 1065);
 }
 
-.courses .courses__container .courses__slider .courses__slide-item .courses__slide-subtitle {
+.tarif .tarif__elems .tarif__card .tarif__heading, .secondSlider .secondSlider__slider .splide__list .secondSlider__slide-item .secondSlider__text .secondSlider__subtitle, .courses .splide .splide__slide .courses__slide-subtitle {
   color: rgb(22, 22, 22);
   font-family: "Furore";
   line-height: 37px;
   font-size: calc(28px + 4 * (100vw - 375px) / 1065);
 }
 
-.courses .courses__container .courses__slogan, .community .community__container .community__presents .community__presents-desk .community__text {
+.tarif .tarif__elems .tarif__card-container .tarif__price .tarif__price-info, .tarif .tarif__elems .tarif__card-container .tarif__price, .courses .courses__container .courses__slogan, .community .community__container .community__presents .community__presents-desk .community__text {
   color: rgb(22, 22, 22);
   font-family: "Gilroy Bold";
   line-height: 27px;
@@ -484,7 +487,15 @@ p {
   font-size: calc(18px + 2 * (100vw - 375px) / 1065);
 }
 
-.aboutCourse .aboutCourse__container .aboutCourse__content .aboutCourse__caption, .courses .courses__container .courses__slider .courses__slide-item .courses__slide-name {
+.qa .accordion-header li p, .program .program__list .program__list-item p {
+  color: rgb(22, 22, 22);
+  font-family: "Gilroy Bold";
+  line-height: 57px;
+  text-transform: uppercase;
+  font-size: calc(20px + 4 * (100vw - 375px) / 1065);
+}
+
+.aboutCourse .aboutCourse__container .aboutCourse__content .aboutCourse__caption, .courses .splide .splide__slide .courses__slide-name {
   color: rgb(128, 77, 255);
   font-family: "Gilroy Bold";
   line-height: 27px;
@@ -492,7 +503,7 @@ p {
   font-size: calc(14px + 2 * (100vw - 375px) / 1065);
 }
 
-.aboutCourse .aboutCourse__container .aboutCourse__content .aboutCourse__text, .community .community__container .community__list ol .community__list-item span, .main .main__container .main__slogan {
+.footer .footer__container .footer__label span, .qa .accordion-body.active p, .secondSlider .secondSlider__slider .splide__list .secondSlider__slide-item .secondSlider__text .secondSlider__desc, .aboutCourse .aboutCourse__container .aboutCourse__content .aboutCourse__text, .community .community__container .community__list ol .community__list-item span, .main .main__container .main__slogan {
   color: rgb(22, 22, 22);
   font-family: "Gilroy Medium";
   font-size: 20px;
@@ -500,7 +511,14 @@ p {
   font-size: calc(18px + 2 * (100vw - 375px) / 1065);
 }
 
-.main .main__container .main__btn {
+.tarif .tarif__elems .tarif__card .tarif__list li {
+  color: rgb(22, 22, 22);
+  font-family: "Gilroy Semibold";
+  line-height: 25px;
+  font-size: calc(18px + 2 * (100vw - 375px) / 1065);
+}
+
+.steps .steps__container .steps__btn, .main .main__container .main__btn {
   color: rgb(255, 255, 255);
   border-radius: 8px;
   background: rgb(0, 0, 0);
@@ -514,7 +532,7 @@ p {
   cursor: pointer;
 }
 
-.courses .courses__container .courses__slider .courses__slide-item .courses__slide__btn {
+.tarif .tarif__container .tarif__btn, .courses .splide .splide__slide .courses__slide__btn {
   border-radius: 6px;
   background: rgb(255, 255, 255);
   height: 48px;
@@ -528,8 +546,7 @@ p {
 }
 
 /* Arrows */
-.slick-prev,
-.slick-next {
+.splide__arrow {
   width: 50px;
   height: 50px;
   background-size: cover;
@@ -546,22 +563,11 @@ p {
   z-index: 10;
   border-radius: 50px;
 }
-.slick-prev:active,
-.slick-next:active {
+.splide__arrow:active {
   opacity: 0.7;
 }
-.slick-prev:hover,
-.slick-next:hover {
-  transform: translateY(-3px);
+.splide__arrow:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.slick-prev {
-  background-image: url("../images/arrow-left.svg");
-}
-
-.slick-next {
-  background-image: url("../images/arrow-right.svg");
 }
 
 .gradient-bg {
@@ -775,6 +781,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .courses .courses__container .courses__title {
   margin-top: 100px;
@@ -788,30 +795,16 @@ p {
   margin-bottom: 80px;
   width: 35%;
 }
-.courses .courses__container .courses__slider {
+.courses .splide {
   width: 100%;
 }
-.courses .courses__container .courses__slider .slick-prev {
-  top: 17%;
-  left: 0px;
-  transform: translate(-180%, 100%);
-}
-.courses .courses__container .courses__slider .slick-next {
-  top: 17%;
-  right: 0px;
-  transform: translate(-70%, 100%);
-}
-.courses .courses__container .courses__slider .slick-track {
-  gap: 30px;
-  display: flex;
-}
-.courses .courses__container .courses__slider .courses__slide-item {
+.courses .splide .splide__slide {
   display: flex;
   flex-direction: column;
   gap: 20px;
   width: 340px;
 }
-.courses .courses__container .courses__slider .courses__slide-item .courses__slide-img {
+.courses .splide .splide__slide .courses__slide-img {
   position: relative;
   aspect-ratio: 1/1;
   display: flex;
@@ -820,7 +813,7 @@ p {
   text-align: center;
   max-width: 340px;
 }
-.courses .courses__container .courses__slider .courses__slide-item .courses__slide-img .courses__slide-die {
+.courses .splide .splide__slide .courses__slide-img .courses__slide-die {
   width: 60px;
   height: 60px;
   position: absolute;
@@ -833,51 +826,51 @@ p {
   justify-content: center;
   align-items: center;
 }
-.courses .courses__container .courses__slider .courses__slide-item .courses__slide-img .courses__slide-die .courses__num {
+.courses .splide .splide__slide .courses__slide-img .courses__slide-die .courses__num {
   font-size: 27px;
   line-height: 31px;
   color: rgb(255, 255, 255);
 }
-.courses .courses__container .courses__slider .courses__slide-item .courses__slide-img .courses__slide-die .courses__text {
+.courses .splide .splide__slide .courses__slide-img .courses__slide-die .courses__text {
   font-size: 10px;
   line-height: 12px;
   color: rgb(255, 255, 255);
 }
-.courses .courses__container .courses__slider .courses__slide-item .courses__slide-img img {
+.courses .splide .splide__slide .courses__slide-img img {
   width: 100%;
   height: 100%;
 }
-.courses .courses__container .courses__slider .courses__slide-item .courses__slide-subtitle {
+.courses .splide .splide__slide .courses__slide-subtitle {
   color: rgb(255, 255, 255);
 }
-.courses .courses__container .courses__slider .courses__slide-item .courses__slide__btn {
+.courses .splide .splide__slide .courses__slide__btn {
   font-size: 14px;
   line-height: 16px;
 }
-.courses .courses__container .courses__slide__progress {
-  display: block;
-  width: 94%;
-  height: 4px;
-  border-radius: 10px;
-  overflow: hidden;
-  background: rgba(48, 48, 48, 0.2);
-  background-image: linear-gradient(to right, rgb(142, 142, 142), rgb(142, 142, 142));
-  background-repeat: no-repeat;
-  background-size: 0 100%;
-  transition: background-size 0.4s ease-in-out;
-  position: absolute;
-  bottom: 80px;
-  left: 3%;
+.courses .splide .splide__arrow--prev {
+  background-image: url("../images/arrow-left.svg");
+  left: 0px;
+  transform: translate(-180%, 100%);
+  top: 20%;
 }
-.courses .courses__container .courses__slide__progress .sr-only {
+.courses .splide .splide__arrow--next {
+  background-image: url("../images/arrow-right.svg");
+  top: 20%;
+  right: 0px;
+  transform: translate(-80%, 100%);
+}
+.courses .splide .my-carousel-progress {
+  background: rgba(48, 48, 48, 0.2);
+  width: 102%;
   position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+  transform: translate(-6%, 80px);
+  bottom: 0;
+}
+.courses .splide .my-carousel-progress-bar {
+  background-image: linear-gradient(to right, rgb(142, 142, 142), rgb(142, 142, 142));
+  height: 2px;
+  transition: width 400ms ease;
+  width: 0;
 }
 
 .aboutCourse {
@@ -931,6 +924,325 @@ p {
 
 .program {
   margin-top: 100px;
+  border-radius: 40px;
+  background: linear-gradient(180deg, rgb(150, 108, 255) -16.533%, rgba(246, 189, 255, 0) 100%);
+}
+.program .program__container .program__title {
+  margin-top: 80px;
+}
+.program .program__list {
+  margin-top: 60px;
+}
+.program .program__list .program__list-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-top: 2px dashed rgba(34, 34, 34, 0.28);
+  padding: 30px 0;
+}
+.program .program__list .program__list-item:first-child {
+  border-top: none;
+}
+.program .program__list .program__list-item span {
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  border-radius: 6px;
+  background: rgb(34, 34, 34);
+  padding: 15px 20px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.program .program__list .program__list-item p {
+  line-height: 24px;
+}
+
+.secondSlider {
+  margin-top: 30px;
+}
+.secondSlider .secondSlider__container {
+  padding: 100px 0 100px 131px;
+}
+.secondSlider .secondSlider__container .secondSlider__title {
+  margin-bottom: 80px;
+  text-align: center;
+}
+.secondSlider .secondSlider__slider .splide__list .secondSlider__slide-item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.secondSlider .secondSlider__slider .splide__list .secondSlider__slide-item .secondSlider__slide-img {
+  position: relative;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 340px;
+}
+.secondSlider .secondSlider__slider .splide__list .secondSlider__slide-item .secondSlider__slide-img img {
+  width: 100%;
+  height: 100%;
+}
+.secondSlider .secondSlider__slider .splide__list .secondSlider__slide-item .secondSlider__text .secondSlider__subtitle {
+  margin-bottom: 20px;
+}
+.secondSlider .splide__arrow--prev {
+  background-image: url("../images/arrow-left.svg");
+  left: 0px;
+  transform: translate(-180%, 100%);
+  top: 20%;
+}
+.secondSlider .splide__arrow--next {
+  background-image: url("../images/arrow-right.svg");
+  top: 20%;
+  right: 0px;
+  transform: translate(-80%, 100%);
+}
+.secondSlider .my-carousel-progress {
+  background: rgba(48, 48, 48, 0.2);
+  width: 102%;
+  position: absolute;
+  transform: translate(-6%, 80px);
+  bottom: 0;
+}
+.secondSlider .my-carousel-progress-bar {
+  background-image: linear-gradient(to right, rgb(142, 142, 142), rgb(142, 142, 142));
+  height: 2px;
+  transition: width 400ms ease;
+  width: 0;
+}
+
+.steps {
+  margin-top: 100px;
+}
+.steps .steps__container .steps__title {
+  margin-bottom: 47px;
+}
+.steps .steps__container .steps__btn {
+  margin: 0 auto;
+}
+.steps .steps__flex-container {
+  margin-bottom: 60px;
+  display: flex;
+  gap: 12px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.steps .steps__flex-container .steps__item {
+  display: flex;
+  flex-direction: column;
+  gap: 97px;
+  flex: 1 0 254px;
+  height: 247px;
+  border-radius: 30px;
+  padding: 30px;
+}
+.steps .steps__flex-container .steps__item p {
+  font-size: 18px;
+  color: rgb(150, 108, 255);
+}
+.steps .steps__flex-container .steps__item:nth-child(odd) {
+  background: linear-gradient(180deg, rgb(217, 198, 255), rgba(245, 244, 247, 0) 100%);
+}
+.steps .steps__flex-container .steps__item:nth-child(even) {
+  background: linear-gradient(180deg, rgba(245, 244, 247, 0), rgb(245, 244, 247) 100%);
+}
+
+.tarif {
+  margin-top: 100px;
+  background-image: url("../images/tarif-bg.png");
+  border-radius: 40px;
+}
+.tarif .tarif__container .tarif__title {
+  margin-top: 100px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.tarif .tarif__container .tarif__btn {
+  margin-bottom: 80px;
+  max-width: 321px;
+}
+.tarif .tarif__elems {
+  margin-bottom: 60px;
+  display: flex;
+  gap: 30px;
+  margin-top: 80px;
+}
+.tarif .tarif__elems .tarif__card-container .tarif__price {
+  margin-top: 20px;
+  border-radius: 20px;
+  background: rgb(128, 77, 255);
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 17px 0;
+  width: 100%;
+}
+.tarif .tarif__elems .tarif__card-container .tarif__price .tarif__price-info {
+  border-radius: 20px;
+  background: rgb(26, 26, 26);
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 15px 15px;
+}
+.tarif .tarif__elems .tarif__card {
+  border: 2px dashed rgb(83, 83, 83);
+  border-radius: 40px;
+  padding: 40px 36px;
+}
+.tarif .tarif__elems .tarif__card .tarif__heading {
+  margin-bottom: 160px;
+}
+.tarif .tarif__elems .tarif__card .tarif__heading span {
+  color: #804dff;
+}
+.tarif .tarif__elems .tarif__card .tarif__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.tarif .tarif__elems .tarif__card .tarif__list li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.tarif .tarif__elems .tarif__card .tarif__list li span {
+  content: url("../images/tarif-icon.svg");
+}
+.tarif .tarif__elems .tarif__card_black {
+  background: rgb(26, 26, 26);
+}
+.tarif .tarif__elems .tarif__card_black .tarif__heading {
+  color: rgb(255, 255, 255);
+}
+.tarif .tarif__elems .tarif__card_black .tarif__list li {
+  color: rgb(83, 83, 83);
+}
+.tarif .tarif__elems .tarif__card_black .tarif__list li:first-child {
+  color: rgb(255, 255, 255);
+}
+.tarif .tarif__elems .tarif__card_white {
+  background: rgb(255, 255, 255);
+}
+.tarif .tarif__elems .tarif__card_white .tarif__heading {
+  color: rgb(22, 22, 22);
+}
+.tarif .tarif__elems .tarif__card_white .tarif__list li {
+  color: rgb(22, 22, 22);
+}
+.tarif .tarif__elems .tarif__card_purple {
+  background: rgb(128, 77, 255);
+}
+.tarif .tarif__elems .tarif__card_purple .tarif__heading {
+  color: rgb(255, 255, 255);
+}
+.tarif .tarif__elems .tarif__card_purple .tarif__heading span {
+  color: #1A1A1A;
+}
+.tarif .tarif__elems .tarif__card_purple .tarif__list li {
+  color: rgb(22, 22, 22);
+}
+.qa {
+  margin-top: 120px;
+}
+.qa .qa__container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.qa .qa__container .qa__title {
+  margin-bottom: 60px;
+}
+.qa .accordion {
+  cursor: pointer;
+  border-bottom: 2px dashed rgba(34, 34, 34, 0.28);
+  padding: 30px 0;
+}
+.qa .accordion-header {
+  border: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+.qa .accordion-header li {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.qa .accordion-header li span {
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  border-radius: 6px;
+  background: rgb(34, 34, 34);
+  padding: 15px 20px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.qa .accordion-header span {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.qa .accordion-body {
+  color: #444;
+  font-size: 14px;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s;
+}
+.qa .accordion-body.active {
+  height: 100%;
+  opacity: 1;
+  padding: 20px 20px 30px 92px;
+}
+.qa .arrow {
+  transition: transform 0.2s linear;
+}
+.qa .accordion:has(.active) .arrow {
+  transform: rotate(180deg);
+}
+
+.footer {
+  border-radius: 40px 40px 0 0;
+  margin-top: 120px;
+  background: rgb(17, 17, 17);
+}
+.footer .footer__container {
+  padding: 80px 40px 42px;
+  display: flex;
+}
+.footer .footer__container .footer__label {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer__container .footer__label .footer__banking {
+  width: 93px;
+  height: 22px;
+}
+.footer .footer__container .footer__label span {
+  color: rgb(255, 255, 255);
+}
+.footer .footer__container .footer__nav {
+  display: grid;
 }
 
 @media (max-width: 1200px) {
@@ -1146,48 +1458,52 @@ p {
     line-height: 24px;
     width: 75%;
   }
-  .courses .courses__container .courses__slider .slick-track {
-    gap: 20px;
-  }
-  .courses .courses__container .courses__slider .slick-prev {
-    top: 13%;
-    transform: translate(-30%, 100%);
-  }
-  .courses .courses__container .courses__slider .slick-next {
-    top: 13%;
-    transform: translate(-10%, 100%);
-  }
-  .courses .courses__container .courses__slider .courses__slide-item {
+  .courses .courses__container .courses__slide-item {
     max-width: 270px;
   }
-  .courses .courses__container .courses__slider .courses__slide-item .courses__slide-img {
+  .courses .courses__container .courses__slide-item .courses__slide-img {
     max-width: 270px;
     width: 72vw;
   }
-  .courses .courses__container .courses__slider .courses__slide-item .courses__slide-img .courses__slide-die {
+  .courses .courses__container .courses__slide-item .courses__slide-img .courses__slide-die {
     width: 46px;
     height: 46px;
     top: 24px;
     right: 24px;
     border-radius: 4px;
   }
-  .courses .courses__container .courses__slider .courses__slide-item .courses__slide-img .courses__slide-die .courses__num {
+  .courses .courses__container .courses__slide-item .courses__slide-img .courses__slide-die .courses__num {
     font-size: 21px;
     line-height: 25px;
   }
-  .courses .courses__container .courses__slider .courses__slide-item .courses__slide-img .courses__slide-die .courses__text {
+  .courses .courses__container .courses__slide-item .courses__slide-img .courses__slide-die .courses__text {
     font-size: 8px;
     line-height: 9px;
   }
-  .courses .courses__container .courses__slider .courses__slide-item .courses__slide-name {
+  .courses .courses__container .courses__slide-item .courses__slide-name {
     font-size: 14px;
   }
-  .courses .courses__container .courses__slider .courses__slide-item .courses__slide-subtitle {
+  .courses .courses__container .courses__slide-item .courses__slide-subtitle {
     line-height: 34px;
   }
-  .courses .courses__container .courses__slider .courses__slide-item .courses__slide__btn {
+  .courses .courses__container .courses__slide-item .courses__slide__btn {
     font-size: 16px;
     height: 44px;
+  }
+  .courses .courses__container .splide__arrow--prev {
+    top: 30%;
+    left: 4%;
+    transform: translate(-50%, -50%);
+  }
+  .courses .courses__container .splide__arrow--next {
+    top: 30%;
+    right: 10%;
+    transform: translate(50%, -50%);
+  }
+  .courses .courses__container .my-carousel-progress {
+    width: 95%;
+    transform: translate(0%, 60px);
+    bottom: 0;
   }
   .courses .courses__container .courses__slide__progress {
     bottom: 42px;
@@ -1219,6 +1535,166 @@ p {
     width: 66vw;
     height: auto;
     margin-bottom: 30px;
+  }
+  .program .program__container {
+    padding: 0 20px;
+  }
+  .program .program__container .program__title {
+    line-height: 46px;
+    margin-top: 60px;
+  }
+  .program .program__list {
+    margin-top: 30px;
+  }
+  .program .program__list .program__list-item {
+    flex-direction: column;
+    align-items: start;
+  }
+  .program .program__list .program__list-item span {
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    padding: 5px 11px;
+  }
+  .secondSlider {
+    margin-top: 60px;
+  }
+  .secondSlider .secondSlider__container {
+    padding: 0 20px;
+  }
+  .secondSlider .secondSlider__container .secondSlider__title {
+    line-height: 46px;
+    margin-top: 40px;
+    width: 90%;
+    text-align: start;
+  }
+  .secondSlider .secondSlider__slider .splide__list .secondSlider__slide-item {
+    max-width: 270px;
+    gap: 20px;
+  }
+  .secondSlider .secondSlider__slider .splide__list .secondSlider__slide-item .secondSlider__slide-img {
+    max-width: 270px;
+    width: 72vw;
+  }
+  .secondSlider .secondSlider__slider .splide__list .secondSlider__slide-item .secondSlider__text .secondSlider__subtitle {
+    margin-bottom: 20px;
+  }
+  .secondSlider .secondSlider__slider .splide__arrow--prev {
+    top: 30%;
+    left: 4%;
+    transform: translate(-50%, -50%);
+  }
+  .secondSlider .secondSlider__slider .splide__arrow--next {
+    top: 30%;
+    right: 10%;
+    transform: translate(50%, -50%);
+  }
+  .secondSlider .secondSlider__slider .my-carousel-progress {
+    width: 95%;
+    transform: translate(0%, 60px);
+    bottom: 0;
+  }
+  .secondSlider .secondSlider__slider .courses__slide__progress {
+    bottom: 42px;
+  }
+  .steps .steps__container {
+    padding: 0 20px;
+  }
+  .steps .steps__container .steps__title {
+    margin-bottom: 40px;
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .steps .steps__container .steps__btn {
+    display: none;
+  }
+  .steps .steps__flex-container {
+    margin-bottom: 60px;
+    display: flex;
+    gap: 12px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .steps .steps__flex-container .steps__item {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    flex: 1 0 254px;
+    height: 247px;
+    border-radius: 19px;
+    padding: 20px;
+    background: linear-gradient(180deg, rgba(245, 244, 247, 0), rgb(245, 244, 247) 100%);
+  }
+  .steps .steps__flex-container .steps__item p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .steps .steps__flex-container .steps__item span {
+    color: rgb(34, 34, 34);
+    font-family: "Gilroy Semibold";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+  .steps .steps__flex-container .steps__item:nth-child(odd) {
+    background: none;
+  }
+  .steps .steps__flex-container .steps__item:nth-child(even) {
+    background: none;
+  }
+  .steps .steps__flex-container .steps__item:nth-child(4n+1), .steps .steps__flex-container .steps__item:nth-child(4n) {
+    background: linear-gradient(180deg, rgb(217, 198, 255), rgba(245, 244, 247, 0) 100%);
+  }
+  .tarif {
+    border-radius: 20px;
+    margin-top: 60px;
+  }
+  .tarif .tarif__container {
+    padding: 0 20px;
+  }
+  .tarif .tarif__card-container .tarif__card {
+    padding: 30px;
+  }
+  .tarif .tarif__card-container .tarif__card .tarif__heading {
+    margin-bottom: 115px;
+  }
+  .tarif .tarif__card-container .tarif__price {
+    padding: 13px 0;
+    border-radius: 15px;
+    font-size: 18px;
+  }
+  .tarif .tarif__card-container .tarif__price .tarif__price-info {
+    border-radius: 15px;
+  }
+  .tarif .tarif__elems {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    flex-direction: column;
+  }
+  .qa {
+    margin-top: 80px;
+  }
+  .qa .qa__container {
+    padding: 0 20px;
+  }
+  .qa .qa__container .qa__title {
+    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .qa .accordion-header li {
+    align-items: start;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .qa .accordion-header li span {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+  .qa .accordion-header li p {
+    text-align: start;
+    line-height: 24px;
   }
 }
 @media (max-width: 480px) {
@@ -1271,5 +1747,17 @@ p {
     width: 89vw;
     height: auto;
     margin-bottom: 30px;
+  }
+  .secondSlider .secondSlider__container .secondSlider__title {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .steps .steps__container .steps__title {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .steps .steps__flex-container .steps__item {
+    flex: 1 0 162px;
+    height: 160px;
   }
 }/*# sourceMappingURL=main.css.map */

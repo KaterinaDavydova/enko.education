@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>enko education</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/splide.min.css">
 </head>
 
 <body>
     <div class="wrapper">
         <div class="gradient-bg">
             <!-- HEADER -->
-            <header class="header">
+            <header class="header" id="home">
                 <div class="header__container">
                     <img class="header__logo" src="images/header-logo.svg" alt="logo">
                     <div class="header__burgerIcon">
@@ -115,7 +114,7 @@
             </div>
         </section>
         <!-- COURSES SECTION -->
-        <section class="courses">
+        <section class="courses" aria-labelledby="carousel-heading">
             <div class="courses__container">
                 <h2 class="courses__title">
                     Програма <br> курсів на рік
@@ -123,74 +122,81 @@
                 <p class="courses__slogan">
                     Пройди 12 курсів та використай ці знання, щоб стати відомим артистом
                 </p>
-                <div class="courses__slider">
-                    <div class="courses__slide-item">
-                        <div class="courses__slide-img">
-                            <img src="images/vanya.png" alt="Vanya">
-                            <div class="courses__slide-die">
+
+                <!-- carousel -->
+                <div class="courses__slider splide" id="coursesSlider">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="courses__slide-item splide__slide">
+                                <div class="courses__slide-img">
+                                    <img src="images/vanya.png" alt="Vanya">
+                                    <div class="courses__slide-die">
+                                        <span class="courses__num">8</span>
+                                        <span class="courses__text">УРОКІВ</span>
+                                    </div>
+                                </div>
+                                <span class="courses__slide-name">досвід Ванька Клименка </span>
+                                <p class="courses__slide-subtitle">Просування <br> релізу</p>
+                                <a class="courses__slide__btn" href="#">Більше про курс</a>
+                            </div>
+                            <div class="courses__slide-item splide__slide">
+                                <div class="courses__slide-img">
+                                    <img src="images/lock.png" alt="lock">
+                                    <!-- <div class="courses__slide-die">
                                 <span class="courses__num">8</span>
                                 <span class="courses__text">УРОКІВ</span>
+                            </div> -->
+                                </div>
+                                <span class="courses__slide-name">Скоро анонс курсу </span>
+                                <!-- <p class="courses__slide-subtitle">Просування релізу</p>
+                        <a class="courses__slide__btn" href="#">Більше про курс</a> -->
+                            </div>
+                            <div class="courses__slide-item splide__slide">
+                                <div class="courses__slide-img">
+                                    <img src="images/lock.png" alt="lock">
+                                    <!-- <div class="courses__slide-die">
+                                <span class="courses__num">8</span>
+                                <span class="courses__text">УРОКІВ</span>
+                            </div> -->
+                                </div>
+                                <span class="courses__slide-name">Скоро анонс курсу </span>
+                                <!-- <p class="courses__slide-subtitle">Просування релізу</p>
+                        <a class="courses__slide__btn" href="#">Більше про курс</a> -->
+                            </div>
+                            <div class="courses__slide-item splide__slide">
+                                <div class="courses__slide-img">
+                                    <img src="images/lock.png" alt="lock">
+                                    <!-- <div class="courses__slide-die">
+                                <span class="courses__num">8</span>
+                                <span class="courses__text">УРОКІВ</span>
+                            </div> -->
+                                </div>
+                                <span class="courses__slide-name">Скоро анонс курсу </span>
+                                <!-- <p class="courses__slide-subtitle">Просування релізу</p>
+                        <a class="courses__slide__btn" href="#">Більше про курс</a> -->
+                            </div>
+                            <div class="courses__slide-item splide__slide">
+                                <div class="courses__slide-img">
+                                    <img src="images/lock.png" alt="lock">
+                                    <!-- <div class="courses__slide-die">
+                                <span class="courses__num">8</span>
+                                <span class="courses__text">УРОКІВ</span>
+                            </div> -->
+                                </div>
+                                <span class="courses__slide-name">Скоро анонс курсу </span>
+                                <!-- <p class="courses__slide-subtitle">Просування релізу</p>
+                        <a class="courses__slide__btn" href="#">Більше про курс</a> -->
                             </div>
                         </div>
-                        <span class="courses__slide-name">досвід Ванька Клименка </span>
-                        <p class="courses__slide-subtitle">Просування <br> релізу</p>
-                        <a class="courses__slide__btn" href="#">Більше про курс</a>
                     </div>
-                    <div class="courses__slide-item">
-                        <div class="courses__slide-img">
-                            <img src="images/lock.png" alt="lock">
-                            <!-- <div class="courses__slide-die">
-                                <span class="courses__num">8</span>
-                                <span class="courses__text">УРОКІВ</span>
-                            </div> -->
-                        </div>
-                        <span class="courses__slide-name">Скоро анонс курсу </span>
-                        <!-- <p class="courses__slide-subtitle">Просування релізу</p>
-                        <a class="courses__slide__btn" href="#">Більше про курс</a> -->
+                    <!-- Add the progress bar element -->
+                    <div class="my-carousel-progress">
+                        <div class="my-carousel-progress-bar"></div>
                     </div>
-                    <div class="courses__slide-item">
-                        <div class="courses__slide-img">
-                            <img src="images/lock.png" alt="lock">
-                            <!-- <div class="courses__slide-die">
-                                <span class="courses__num">8</span>
-                                <span class="courses__text">УРОКІВ</span>
-                            </div> -->
-                        </div>
-                        <span class="courses__slide-name">Скоро анонс курсу </span>
-                        <!-- <p class="courses__slide-subtitle">Просування релізу</p>
-                        <a class="courses__slide__btn" href="#">Більше про курс</a> -->
-                    </div>
-                    <div class="courses__slide-item">
-                        <div class="courses__slide-img">
-                            <img src="images/lock.png" alt="lock">
-                            <!-- <div class="courses__slide-die">
-                                <span class="courses__num">8</span>
-                                <span class="courses__text">УРОКІВ</span>
-                            </div> -->
-                        </div>
-                        <span class="courses__slide-name">Скоро анонс курсу </span>
-                        <!-- <p class="courses__slide-subtitle">Просування релізу</p>
-                        <a class="courses__slide__btn" href="#">Більше про курс</a> -->
-                    </div>
-                    <div class="courses__slide-item">
-                        <div class="courses__slide-img">
-                            <img src="images/lock.png" alt="lock">
-                            <!-- <div class="courses__slide-die">
-                                <span class="courses__num">8</span>
-                                <span class="courses__text">УРОКІВ</span>
-                            </div> -->
-                        </div>
-                        <span class="courses__slide-name">Скоро анонс курсу </span>
-                        <!-- <p class="courses__slide-subtitle">Просування релізу</p>
-                        <a class="courses__slide__btn" href="#">Більше про курс</a> -->
-                    </div>
-                </div>
-
-                <div class="courses__slide__progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-                    <span class="slider__label sr-only">
                 </div>
             </div>
         </section>
+
         <!-- ABOUTCOURSE -->
         <section class="aboutCourse">
             <div class="aboutCourse__container">
@@ -199,9 +205,9 @@
                     <span class="aboutCourse__caption">Про курс</span>
                     <h4 class="aboutCourse__title">Просування <br> релізу</h4>
                     <p class="aboutCourse__text">
-                        Курс веде Ваньок Кліменко — співзасновник лейбла ENKO, музичний продюсер 
-                        Kalush Orchestra, alyona alyona, SKOFKA, автор понад 300 пісень, саундпродюсер KOLA, 
-                        Jerry Heil, MamaRika, який спродюсував всі пісні DOROFEEVA українською мовою, один з 
+                        Курс веде Ваньок Кліменко — співзасновник лейбла ENKO, музичний продюсер
+                        Kalush Orchestra, alyona alyona, SKOFKA, автор понад 300 пісень, саундпродюсер KOLA,
+                        Jerry Heil, MamaRika, який спродюсував всі пісні DOROFEEVA українською мовою, один з
                         головних трендсеттерів української музики
                     </p>
                 </div>
@@ -210,19 +216,309 @@
                 </div>
             </div>
         </section>
+
+        <!-- PROGRAM -->
         <section class="program">
             <div class="program__container">
-
-            </div> 
-
+                <h4 class="program__title">Програма курсу</h4>
+                <div class="program__list">
+                    <li class="program__list-item"><span>01</span>
+                        <p>Хто такий популярний артист та як зацікавити аудиторію? Досвід Івана Клименка</p>
+                    </li>
+                    <li class="program__list-item"><span>02</span>
+                        <p>Як зрозуміти, що пісня сильна?</p>
+                    </li>
+                    <li class="program__list-item"><span>03</span>
+                        <p>Візуальне оформлення релізу, як зацікавити глядачів</p>
+                    </li>
+                    <li class="program__list-item"><span>04</span>
+                        <p>Дистрибуція , просування пісні на стрімінг-платформах</p>
+                    </li>
+                    <li class="program__list-item"><span>05</span>
+                        <p>PR-реліз</p>
+                    </li>
+                    <li class="program__list-item"><span>06</span>
+                        <p>Просування артиста в соцмережах</p>
+                    </li>
+                    <li class="program__list-item"><span>07</span>
+                        <p>Як потрапити в рекомендаційні стрічки</p>
+                    </li>
+                    <li class="program__list-item"><span>08</span>
+                        <p>Колаборації з блогерами та медійними особистостями</p>
+                    </li>
+                    <li class="program__list-item"><span>09</span>
+                        <p>Стабільність в просуванні, як залишатися в інфополі</p>
+                    </li>
+                </div>
+            </div>
         </section>
 
-        <footer>
+        <section class="secondSlider">
+            <div class="secondSlider__container">
+                <h3 class="secondSlider__title">Для кого курс</h3>
+                <div class="secondSlider__slider splide" id="clientsSlider">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="secondSlider__slide-item splide__slide">
+                                <div class="secondSlider__slide-img">
+                                    <img src="images/second-slider1.png" alt="picture">
+                                </div>
+                                <div class="secondSlider__text">
+                                    <p class="secondSlider__subtitle">
+                                        молодий <br>артист
+                                    </p>
+                                    <span class="secondSlider__desc">
+                                        який хоче просувати свою творчість
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="secondSlider__slide-item splide__slide">
+                                <div class="secondSlider__slide-img">
+                                    <img src="images/second-slider2.png" alt="picture">
+                                </div>
+                                <div class="secondSlider__text">
+                                    <p class="secondSlider__subtitle">
+                                        менеджер <br>артиста
+                                    </p>
+                                    <span class="secondSlider__desc">
+                                        який мріє вивести треки в топчарти 
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="secondSlider__slide-item splide__slide">
+                                <div class="secondSlider__slide-img">
+                                    <img src="images/second-slider3.png" alt="picture">
+                                </div>
+                                <div class="secondSlider__text">
+                                    <p class="secondSlider__subtitle">
+                                        маркетолог
+                                    </p>
+                                    <span class="secondSlider__desc">
+                                        який хоче почати розвиватись в музичній сфері
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="secondSlider__slide-item splide__slide">
+                                <div class="secondSlider__slide-img">
+                                    <img src="images/second-slider4.png" alt="picture">
+                                </div>
+                                <div class="secondSlider__text">
+                                    <p class="secondSlider__subtitle">
+                                        лейбл
+                                    </p>
+                                    <span class="secondSlider__desc">
+                                        який хоче просувати артистів 
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="secondSlider__slide-item splide__slide">
+                                <div class="secondSlider__slide-img">
+                                    <img src="images/second-slider3.png" alt="picture">
+                                </div>
+                                <div class="secondSlider__text">
+                                    <p class="secondSlider__subtitle">
+                                        маркетолог
+                                    </p>
+                                    <span class="secondSlider__desc">
+                                        який хоче почати розвиватись в музичній сфері
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add the progress bar element -->
+                    <div class="secondSlider__progress my-carousel-progress">
+                        <div class="secondSlider__progress-bar my-carousel-progress-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- STEPS -->
+        <section class="steps">
+            <div class="steps__container">
+                <h4 class="steps__title">
+                    Як приєднатися <br>до курсу
+                </h4>
+                <div class="steps__flex-container">
+                    <div class="steps__item">
+                        <p>Крок 1</p>
+                        <span>Чат-бот</span>
+                    </div>
+                    <div class="steps__item">
+                        <p>Крок 2</p>
+                        <span>Контактна інформація</span>
+                    </div>
+                    <div class="steps__item">
+                        <p>Крок 3</p>
+                        <span>Вибір тарифу</span>
+                    </div>
+                    <div class="steps__item">
+                        <p>Крок 4</p>
+                        <span>Оплата</span>
+                    </div>
+                    <div class="steps__item">
+                        <p>Крок 5</p>
+                        <span>Доступ до ком'юніті та курсів
+                        </span>
+                    </div>
+                </div>
+                <a class="steps__btn" href="#">Приєднатися</a>
+            </div>
+        </section>
+        <!-- tARIF -->
+        <section class="tarif">
+            <div class="tarif__container">
+                <h2 class="tarif__title">
+                    Тарифи
+                </h2>
+                <div class="tarif__elems">
+                    <div class="tarif__card-container">
+                        <div class="tarif__card tarif__card_black">
+                            <h4 class="tarif__heading"><span>Підписка</span> <br> на 1 курс </h4>
+
+                            <ul class="tarif__list">
+                                <li><span></span>Доступ до 1 курсу назавжди </li>
+                                <li><span></span>Доступ до закритого клубу</li>
+                                <li><span></span>Онлайн-зустрічі з менторами</li>
+                                <li><span></span>Інсайдерська інфорамація для закритого клубу</li>
+                                <li><span></span>Шаблони ідей</li>
+                                <li><span></span>Обговорення новин </li>
+                            </ul>
+                        </div>
+                        <div class="tarif__price">Вартість: 110$</div>
+                    </div>
+                    <div class="tarif__card-container">
+                        <div class="tarif__card tarif__card_white">
+                            <h4 class="tarif__heading"><span>Підписка</span> <br> на 1 місяць </h4>
+
+                            <ul class="tarif__list">
+                                <li><span></span>Доступ до 1 курсу назавжди </li>
+                                <li><span></span>Доступ до закритого клубу</li>
+                                <li><span></span>Онлайн-зустрічі з менторами</li>
+                                <li><span></span>Інсайдерська інфорамація для закритого клубу</li>
+                                <li><span></span>Шаблони ідей</li>
+                                <li><span></span>Обговорення новин </li>
+                            </ul>
+                        </div>
+                        <div class="tarif__price">Вартість: 32$</div>
+                    </div>
+                    <div class="tarif__card-container">
+                        <div class="tarif__card tarif__card_purple">
+                            <h4 class="tarif__heading"><span>Підписка</span> <br> на 1 рік </h4>
+
+                            <ul class="tarif__list">
+                                <li><span></span>Доступ до 1 курсу назавжди </li>
+                                <li><span></span>Доступ до закритого клубу</li>
+                                <li><span></span>Онлайн-зустрічі з менторами</li>
+                                <li><span></span>Інсайдерська інфорамація для закритого клубу</li>
+                                <li><span></span>Шаблони ідей</li>
+                                <li><span></span>Обговорення новин </li>
+                            </ul>
+                        </div>
+                        <div class="tarif__price">знижка 50%, вартість за місяць 16$
+                            <div class="tarif__price-info">Вартість: 190$</div>
+                        </div>
+                    </div>
+                </div>
+                <a class="tarif__btn" href="#">Стати учасником</a>
+            </div>
+        </section>
+        <!--QA SECTION-->
+        <section class="qa">
+            <div class="qa__container">
+                <h4 class="qa__title">Питання відповідь</h4>
+                <div class="accordion">
+                  <button class="accordion-header">
+                    <li><span>01</span><p>Скільки курс буде доступним після завершення?</p></li>
+                    <img class="arrow" src="images/arrow-qa.svg" alt="arrow">
+                  </button>
+                  <div class="accordion-body">
+                    <p>
+                        Курс залишається в доступі назавжди. 
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion">
+                  <button class="accordion-header">
+                    <li><span>02</span><p>Скільки курс буде доступним після завершення?</p></li>
+                    <img class="arrow" src="images/arrow-qa.svg" alt="arrow">
+                  </button>
+                  <div class="accordion-body">
+                    <p>
+                        Чи підійде мені курс, якщо я не співак?
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion">
+                    <button class="accordion-header">
+                      <li><span>03</span><p>Скільки курс буде доступним після завершення?</p></li>
+                      <img class="arrow" src="images/arrow-qa.svg" alt="arrow">
+                    </button>
+                    <div class="accordion-body">
+                      <p>
+                          Курс залишається в доступі назавжди. 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion">
+                    <button class="accordion-header">
+                      <li><span>04</span><p>Скільки курс буде доступним після завершення?</p></li>
+                      <img class="arrow" src="images/arrow-qa.svg" alt="arrow">
+                    </button>
+                    <div class="accordion-body">
+                      <p>
+                          Курс залишається в доступі назавжди. 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion">
+                    <button class="accordion-header">
+                      <li><span>05</span><p>Скільки курс буде доступним після завершення?</p></li>
+                      <img class="arrow" src="images/arrow-qa.svg" alt="arrow">
+                    </button>
+                    <div class="accordion-body">
+                      <p>
+                          Курс залишається в доступі назавжди. 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion">
+                    <button class="accordion-header">
+                      <li><span>06</span><p>Скільки курс буде доступним після завершення?</p></li>
+                      <img class="arrow" src="images/arrow-qa.svg" alt="arrow">
+                    </button>
+                    <div class="accordion-body">
+                      <p>
+                          Курс залишається в доступі назавжди. 
+                      </p>
+                    </div>
+                  </div>
+              </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__label">
+                    <a href="#home" class="footer__logo"><img src="images/enko.svg" alt="logo"></a>
+                    <span>Від ноунейма до артиста</span>
+                    <img class="footer__banking" src="images/banking.svg" alt="banking">
+                </div>
+                <div class="footer__nav">
+                    <li>Наші соцмережі
+                        <a href="#"><img src="images/instagram.svg" alt="instagram"></a>                       
+                    </li>
+                    <li><a href="#"><img src="images/tikTok.svg" alt="tiktok"></a></li>
+                    <li>Пошта
+                        <a href="mailto:info@enkomusic.com ">info@enkomusic.com </a>
+                    </li>
+                    <li>Телефон
+                        <a href="tel:">875956569696</a>
+                    </li>
+                </div>
+            </div>
         </footer>
     </div>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/slick.min.js"></script>
+    <script src="js/splide.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

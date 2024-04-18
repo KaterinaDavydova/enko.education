@@ -94,10 +94,11 @@ h6 {
 /* default  */
 
 body {
-	
+
 	&.lock {
 		overflow: hidden;
 	}
+
 	scroll-behavior: smooth;
 
 	[class*="__container"] {
@@ -163,9 +164,9 @@ $maxWidth: 1440;
 }
 
 // ----- FONT COLOR -----
-$textBlack:rgb(22, 22, 22);
-$textWhite:rgb(255, 255, 255);
-$textPurple:rgb(128, 77, 255);
+$textBlack: rgb(22, 22, 22);
+$textWhite: rgb(255, 255, 255);
+$textPurple: rgb(128, 77, 255);
 /* ----------------------- */
 
 a {
@@ -175,7 +176,7 @@ a {
 	line-height: 31px;
 }
 
-h1 {
+h1, h3 {
 	color: $textBlack;
 	font-family: "Furore";
 	line-height: 100px;
@@ -229,6 +230,14 @@ p {
 	@include adaptiv-font(20, 18);
 }
 
+%gilroy-b24 {
+	color: $textBlack;
+	font-family: "Gilroy Bold";
+	line-height: 57px;
+	text-transform: uppercase;
+	@include adaptiv-font(24, 20);
+}
+
 %gilroy-b16 {
 	color: $textPurple;
 	font-family: "Gilroy Bold";
@@ -244,72 +253,77 @@ p {
 	line-height: 25px;
 	@include adaptiv-font(20, 18);
 }
+
+%gilroy-sb20 {
+	color: $textBlack;
+	font-family: "Gilroy Semibold";
+	line-height: 25px;
+	@include adaptiv-font(20, 18);
+}
+
 // -----------------------------------
 
 
 
 
-%blackBtn{
+%blackBtn {
 	@extend %furore-r20;
 	color: rgb(255, 255, 255);
 	border-radius: 8px;
 	background: rgb(0, 0, 0);
 	height: 67px;
 	display: flex;
-    align-items: center;
-    justify-content: center;
+	align-items: center;
+	justify-content: center;
 	text-align: center;
-    width: 100%;
-    max-width: 421px;
-    cursor: pointer;
+	width: 100%;
+	max-width: 421px;
+	cursor: pointer;
 }
 
-%whiteBtn{
+%whiteBtn {
 	border-radius: 6px;
 	background: rgb(255, 255, 255);
 	height: 48px;
 	display: flex;
-    align-items: center;
-    justify-content: center;
+	align-items: center;
+	justify-content: center;
 	text-align: center;
-    width: 100%;
-    max-width: 200px;
-    cursor: pointer;
+	width: 100%;
+	max-width: 200px;
+	cursor: pointer;
 }
 
 /* Arrows */
-.slick-prev,
-.slick-next {
-  width: 50px;
-  height: 50px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  cursor: pointer;
-  line-height: 0;
-  display: block;
-  padding: 0;
-  color: transparent;
-  border: none;
-  outline: none;
-  background: transparent;
-  z-index: 10;
-  border-radius: 50px;
+.splide__arrow {
+	width: 50px;
+	height: 50px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	cursor: pointer;
+	line-height: 0;
+	display: block;
+	padding: 0;
+	color: transparent;
+	border: none;
+	outline: none;
+	background: transparent;
+	z-index: 10;
+	border-radius: 50px;
 
-  &:active {
-    opacity: 0.7;
-  }
+	&:active {
+		opacity: 0.7;
+	}
 
-  &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-}
-.slick-prev {
-  background-image: url("../images/arrow-left.svg");
+	&:hover {
+		// transform: translateY(-3px);
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	}
 }
 
-.slick-next {
-  background-image: url("../images/arrow-right.svg");
-}
+
+
+
+
 // -----------------------------------------------------
